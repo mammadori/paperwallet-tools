@@ -1,0 +1,15 @@
+# For pip, in a virtual environment (see README.md). On Debian the same
+# libraries are packaged: python3-mnemonic python3-pycryptodome
+# python3-reportlab python3-qrcode (python3-pytest python3-pypdf for the tests).
+# libsecp256k1 is a system library loaded through ctypes, not a pip package:
+# install it with the system's package manager (Debian: libsecp256k1-6).
+
+# Runtime
+mnemonic>=0.20       # BIP39 (reference implementation)
+reportlab>=4.0
+qrcode>=7.4
+pycryptodome>=3.19   # AES-256 for BIP38, RIPEMD-160 where OpenSSL lacks it
+
+# Tests only
+pytest>=8
+pypdf>=4

@@ -1,0 +1,9 @@
+# Keep generated wallets, local environments and caches out of the source
+# package: the wallets contain private keys.
+tar-ignore
+tar-ignore = "*.pdf"
+tar-ignore = "paperwallet*.md"
+tar-ignore = "paperseed*.md"
+tar-ignore = ".venv"
+tar-ignore = "__pycache__"
+tar-ignore = ".pytest_cache"

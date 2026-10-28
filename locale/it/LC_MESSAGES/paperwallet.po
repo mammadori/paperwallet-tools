@@ -1,0 +1,650 @@
+# Italian translation of Paperwallet tools (paperwallet.py and paperseed.py).
+# Copyright (C) 2026 Marco Amadori <marco.amadori@gmail.com>
+# This file is distributed under the same license as Paperwallet tools (GPL-3+).
+# English is the source language (msgid); this file is read directly at
+# runtime, no compiled .mo is needed.
+msgid ""
+msgstr ""
+"Project-Id-Version: paperwallet-tools 0.1.0\n"
+"PO-Revision-Date: 2026-10-28 20:00+0000\n"
+"Last-Translator: Marco Amadori <marco.amadori@gmail.com>\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Entropy and key derivation
+msgid "short read from /dev/random"
+msgstr "lettura incompleta da /dev/random"
+
+msgid "entropy file is larger than 64 MiB"
+msgstr "il file di entropia supera i 64 MiB"
+
+msgid "Entropy string (hidden): "
+msgstr "Stringa di entropia (nascosta): "
+
+msgid "SHA-256 of the entropy is not a valid secp256k1 private key"
+msgstr "lo SHA-256 dell'entropia non è una chiave privata secp256k1 valida"
+
+msgid "warning: the entropy you supplied is at most ~{bits} bits ({kind}), less than {target}; the keys are weaker than random ones. Example: 100 dice rolls give ~258 bits."
+msgstr "attenzione: l'entropia fornita è al massimo ~{bits} bit ({kind}), meno di {target}; le chiavi sono più deboli di chiavi casuali. Esempio: 100 lanci di dado danno ~258 bit."
+
+msgid "entropy taken as a hexadecimal number: {digits} digits, {nbytes} bytes"
+msgstr "entropia presa come numero esadecimale: {digits} cifre, {nbytes} byte"
+
+msgid "coin flips"
+msgstr "lanci di moneta"
+
+msgid "dice rolls"
+msgstr "lanci di dado"
+
+msgid "decimal digits"
+msgstr "cifre decimali"
+
+msgid "hexadecimal digits"
+msgstr "cifre esadecimali"
+
+msgid "words"
+msgstr "parole"
+
+msgid "text"
+msgstr "testo"
+
+msgid "binary data"
+msgstr "dati binari"
+
+#. BIP38
+msgid "invalid private key"
+msgstr "chiave privata non valida"
+
+msgid "not a non-EC-multiplied BIP38 key"
+msgstr "non è una chiave BIP38 senza moltiplicazione EC"
+
+msgid "unsupported BIP38 flag byte"
+msgstr "byte di flag BIP38 non supportato"
+
+msgid "wrong password (BIP38 address hash mismatch)"
+msgstr "password errata (l'address hash BIP38 non corrisponde)"
+
+#. PDF: outside of the card
+msgid "BITCOIN ADDRESS  ·  P2WPKH (SegWit)"
+msgstr "INDIRIZZO BITCOIN  ·  P2WPKH (SegWit)"
+
+msgid "LOAD / DEPOSIT"
+msgstr "RICEVI / DEPOSITA"
+
+msgid "public — safe to share"
+msgstr "pubblico — si può condividere"
+
+msgid "PAPER  WALLET"
+msgstr "PORTAFOGLIO  CARTACEO"
+
+msgid "native SegWit · {prefix}"
+msgstr "SegWit nativo · {prefix}"
+
+msgid "BIP38 ENCRYPTED KEY"
+msgstr "CHIAVE CIFRATA BIP38"
+
+msgid "UNENCRYPTED KEY"
+msgstr "CHIAVE IN CHIARO"
+
+msgid "private key inside — keep sealed"
+msgstr "chiave privata all'interno — non aprire"
+
+msgid "copy {n}/{total}"
+msgstr "copia {n}/{total}"
+
+msgid "SEAL · tape over this edge, sign across the tape"
+msgstr "SIGILLO · nastro su questo bordo, firma a cavallo"
+
+#. PDF: inside of the card
+msgid "PRIVATE KEY  ·  BIP38 ENCRYPTED"
+msgstr "CHIAVE PRIVATA  ·  CIFRATA BIP38"
+
+msgid "PRIVATE KEY  ·  WIF (compressed)"
+msgstr "CHIAVE PRIVATA  ·  WIF (compressa)"
+
+msgid "SPEND"
+msgstr "SPENDI"
+
+msgid "SECRET — never share"
+msgstr "SEGRETA — non condividere"
+
+msgid "password required"
+msgstr "serve la password"
+
+msgid "security pattern · not a key"
+msgstr "trama di sicurezza · non è una chiave"
+
+msgid "HOW TO SPEND: SWEEP THE WHOLE BALANCE"
+msgstr "COME SPENDERE: TRASFERISCI TUTTO IL SALDO"
+
+msgid "1. Check the balance with the address only (watch-only)."
+msgstr "1. Controlla il saldo usando solo l'indirizzo (watch-only)."
+
+msgid "2. On a trusted device, sweep the key into your wallet:"
+msgstr "2. Da un dispositivo fidato, fai lo sweep della chiave nel tuo wallet:"
+
+msgid "Sparrow: Tools › Sweep Private Key, Native SegWit;"
+msgstr "Sparrow: Tools › Sweep Private Key, Native SegWit;"
+
+msgid "Electrum: Wallet › Private keys › Sweep, scan the QR;"
+msgstr "Electrum: Wallet › Private keys › Sweep, inquadra il QR;"
+
+msgid "Sparrow: Tools › Sweep Private Key, Native SegWit,"
+msgstr "Sparrow: Tools › Sweep Private Key, Native SegWit,"
+
+msgid "with the key without p2wpkh: in front."
+msgstr "con la chiave senza p2wpkh: davanti."
+
+msgid "Electrum: decrypt it first, then sweep p2wpkh:KEY."
+msgstr "Electrum: prima decifrala, poi fai lo sweep di p2wpkh:CHIAVE."
+
+msgid "3. The 6P… key needs its password: use a wallet with"
+msgstr "3. La chiave 6P… richiede la password: usa un wallet con"
+
+msgid "BIP38 support, or decrypt it offline first."
+msgstr "supporto BIP38, oppure decifrala prima offline."
+
+msgid "3. Sweep everything in one go, never just a part:"
+msgstr "3. Trasferisci tutto in una volta, mai solo una parte:"
+
+msgid "the key must not be used again afterwards."
+msgstr "dopo, la chiave non va più usata."
+
+msgid "4. Then destroy every copy of this wallet."
+msgstr "4. Poi distruggi tutte le copie di questo wallet."
+
+msgid "HOW TO STORE IT"
+msgstr "COME CONSERVARLO"
+
+msgid "• Keep it folded and sealed. A broken seal means the secret"
+msgstr "• Tienilo piegato e sigillato. Un sigillo rotto vuol dire che il segreto"
+
+msgid "may have been seen: move the funds to a new wallet."
+msgstr "può essere stato visto: sposta i fondi in un nuovo wallet."
+
+msgid "• Dry and dark, in a sealed bag, away from heat and fire."
+msgstr "• All'asciutto e al buio, in una busta chiusa, lontano da calore e fuoco."
+
+msgid "• Copies in different places; never photograph, scan"
+msgstr "• Copie in luoghi diversi; non fotografare, scansionare"
+
+msgid "or photocopy the inside."
+msgstr "né fotocopiare l'interno."
+
+msgid "• Keep the BIP38 password elsewhere, never with the card."
+msgstr "• Conserva la password BIP38 altrove, mai insieme alla tessera."
+
+msgid "• Tell someone you trust that it exists and where it is."
+msgstr "• Fai sapere a una persona fidata che esiste e dove si trova."
+
+msgid "• Check the balance now and then, with the address only."
+msgstr "• Controlla ogni tanto il saldo, usando solo l'indirizzo."
+
+msgid "HOW TO USE"
+msgstr "ISTRUZIONI"
+
+msgid "1. Fund it: send bitcoin to the address outside."
+msgstr "1. Ricarica: invia bitcoin all'indirizzo esterno."
+
+msgid "2. Spend it: sweep the WHOLE balance into a wallet,"
+msgstr "2. Per spendere: trasferisci TUTTO il saldo in un wallet,"
+
+msgid "then consider this paper used."
+msgstr "poi considera questa tessera esaurita."
+
+msgid "3. Decrypt the 6P… key with its BIP38 password;"
+msgstr "3. Decifra la chiave 6P… con la sua password BIP38;"
+
+msgid "keep the password apart from this card."
+msgstr "conserva la password lontano da questa tessera."
+
+msgid "3. Anyone who reads the key owns the funds:"
+msgstr "3. Chi legge la chiave possiede i fondi:"
+
+msgid "keep the card folded and sealed."
+msgstr "tieni la tessera piegata e sigillata."
+
+msgid "date ____________   amount ________________"
+msgstr "data ____________   importo ________________"
+
+#. PDF: page furniture
+msgid "A4 · print at 100% (no scaling) · duplex, flip on LONG edge"
+msgstr "A4 · stampa al 100% (senza adattare) · fronte/retro, lato LUNGO"
+
+msgid "Cut on the crop marks."
+msgstr "Taglia sui crocini."
+
+msgid "Lines 1–3: mountain folds on this side; the steps are on the back."
+msgstr "Linee 1–3: pieghe a monte su questo lato; i passaggi sono sul retro."
+
+msgid "FOLDING: key side up, lines in order"
+msgstr "PIEGATURA: lato chiave in su, linee in ordine"
+
+msgid "1  fold the key panel up along line 1"
+msgstr "1  piega in su il pannello della chiave lungo la linea 1"
+
+msgid "2  fold up again along line 2"
+msgstr "2  piega di nuovo in su lungo la linea 2"
+
+msgid "3  fold the top panel down along line 3: address outside"
+msgstr "3  piega in giù il pannello in alto lungo la linea 3: indirizzo fuori"
+
+msgid "4  tape the open edge (SEAL) and sign across the tape"
+msgstr "4  chiudi il bordo aperto (SIGILLO) con nastro e firma a cavallo del nastro"
+
+msgid "Inner panels are slightly shorter, so that they nest."
+msgstr "I pannelli interni sono un po' più corti, per annidarsi."
+
+msgid "address"
+msgstr "indirizzo"
+
+msgid "private key"
+msgstr "chiave privata"
+
+msgid "folded card, seen from the side"
+msgstr "tessera piegata, vista di lato"
+
+msgid "sheet {n}/{total}"
+msgstr "foglio {n}/{total}"
+
+msgid "Bitcoin paper wallet"
+msgstr "Paper wallet Bitcoin"
+
+msgid "FRONT — outside"
+msgstr "FRONTE — esterno"
+
+msgid "BACK — inside (private keys)"
+msgstr "RETRO — interno (chiavi private)"
+
+msgid "warning: Open Sans not found, using Helvetica (install the fonts-open-sans package)"
+msgstr "attenzione: Open Sans non trovato, uso Helvetica (installa il pacchetto fonts-open-sans)"
+
+#. Password prompt
+msgid "BIP38 password: "
+msgstr "Password BIP38: "
+
+msgid "empty password"
+msgstr "password vuota"
+
+msgid "Confirm password: "
+msgstr "Conferma password: "
+
+msgid "passwords do not match"
+msgstr "le password non coincidono"
+
+msgid "warning: password shorter than 12 characters"
+msgstr "attenzione: password più corta di 12 caratteri"
+
+msgid "internal self-check failed (WIF round-trip)"
+msgstr "autoverifica interna fallita (andata e ritorno WIF)"
+
+msgid "internal self-check failed (BIP38 round-trip)"
+msgstr "autoverifica interna fallita (cifratura/decifratura BIP38)"
+
+#. Command line help
+msgid "Generate an offline Bitcoin P2WPKH paper wallet as a duplex A4 PDF."
+msgstr "Genera offline un paper wallet Bitcoin P2WPKH come PDF A4 fronte/retro."
+
+msgid "read entropy from a file ('-' for stdin); empty means /dev/random"
+msgstr "legge l'entropia da un file ('-' per stdin); se vuota usa /dev/random"
+
+msgid "entropy as a string (visible in shell history and ps: prefer --entropy-prompt)"
+msgstr "entropia come stringa (visibile nella history della shell e in ps: meglio --entropy-prompt)"
+
+msgid "type the entropy string at a hidden prompt"
+msgstr "digita l'entropia a un prompt nascosto"
+
+msgid "ask a password and add BIP38-encrypted strips"
+msgstr "chiede una password e aggiunge strisce cifrate BIP38"
+
+msgid "number of different wallets (default 1)"
+msgstr "numero di wallet diversi (default 1)"
+
+msgid "copies of each wallet, one strip each (default 2, or as in --from-md)"
+msgstr "copie di ogni wallet, una striscia ciascuna (default 2, o come in --from-md)"
+
+msgid "--copies must be between 1 and {max}"
+msgstr "--copies deve essere tra 1 e {max}"
+
+msgid "address prefix after bc1q, for all wallets or one per wallet"
+msgstr "prefisso dell'indirizzo dopo bc1q, uguale per tutti i wallet o uno per wallet"
+
+msgid "processes for the vanity search (default: all CPU cores)"
+msgstr "processi per la ricerca vanity (default: tutti i core della CPU)"
+
+msgid "--jobs must be at least 1"
+msgstr "--jobs deve essere almeno 1"
+
+msgid "main (default) or a test network, whose coins have no value: for trying out funding and sweeping"
+msgstr "main (default) oppure una rete di prova, le cui monete non hanno valore: per provare ricarica e sweep"
+
+msgid "network {network}: test keys and addresses, the coins have no value"
+msgstr "rete {network}: chiavi e indirizzi di prova, le monete non hanno valore"
+
+msgid "NO VALUE"
+msgstr "SENZA VALORE"
+
+
+msgid "{path} already exists, writing {new} instead"
+msgstr "{path} esiste già, scrivo invece {new}"
+
+msgid "no free file name left for {path}"
+msgstr "nessun nome di file libero per {path}"
+
+
+msgid "language of the wallet and messages (default: from the system locale)"
+msgstr "lingua del wallet e dei messaggi (default: dal locale di sistema)"
+
+#. Console output
+msgid "error: {message}"
+msgstr "errore: {message}"
+
+msgid "aborted"
+msgstr "interrotto"
+
+msgid "warning: key derived from user entropy; it is only as strong as that input (at most ~{bits} bits, {kind})"
+msgstr "attenzione: chiave derivata da entropia dell'utente; è robusta solo quanto quell'input (al massimo ~{bits} bit, {kind})"
+
+msgid "address: {address}"
+msgstr "indirizzo: {address}"
+
+msgid "strips: {plain} WIF + {encrypted} BIP38 · A4 sheets: {sheets}"
+msgstr "strisce: {plain} WIF + {encrypted} BIP38 · fogli A4: {sheets}"
+
+msgid "wallet {n}/{total}"
+msgstr "wallet {n}/{total}"
+
+#. Vanity search
+msgid "vanity prefix must be 1 to {max} characters after bc1q"
+msgstr "il prefisso vanity deve avere da 1 a {max} caratteri dopo bc1q"
+
+msgid "invalid characters in vanity prefix: {chars} (bech32 has no 1, b, i, o)"
+msgstr "caratteri non validi nel prefisso vanity: {chars} (bech32 non contiene 1, b, i, o)"
+
+msgid "give one vanity prefix, or one per wallet ({n})"
+msgstr "indica un solo prefisso vanity, oppure uno per wallet ({n})"
+
+msgid "searching {prefix}… (~{tries} attempts, {jobs} processes)"
+msgstr "ricerca di {prefix}… (~{tries} tentativi, {jobs} processi)"
+
+msgid "vanity search worker failed"
+msgstr "un processo della ricerca vanity è fallito"
+
+msgid "internal self-check failed (vanity search)"
+msgstr "autoverifica interna fallita (ricerca vanity)"
+
+msgid "written: {path} (mode 0600)"
+msgstr "scritto: {path} (permessi 0600)"
+
+#. Output files
+msgid "output name: writes NAME.pdf and NAME.md (default {default}; with --from-md, the name of that file)"
+msgstr "nome di uscita: scrive NOME.pdf e NOME.md (default {default}; con --from-md, il nome di quel file)"
+
+msgid "overwrite the output files if they exist (default: write name_01, name_02, ...)"
+msgstr "sovrascrive i file di uscita se esistono già (default: scrive nome_01, nome_02, ...)"
+
+msgid "SECRET: this file holds the same secrets as the PDF. Keep it offline and encrypted, or delete it once the paper copies are checked."
+msgstr "SEGRETO: questo file contiene gli stessi segreti del PDF. Tienilo offline e cifrato, oppure cancellalo dopo aver controllato le copie su carta."
+
+#. Derivation from a seed (paperwallet.py --seed-file)
+msgid "derive the keys from the seed in a Markdown file written by paperseed.py"
+msgstr "deriva le chiavi dal seed di un file Markdown scritto da paperseed.py"
+
+msgid "with --seed-file: derive at these paths (to rebuild a wallet) instead of new ones"
+msgstr "con --seed-file: deriva a questi path (per ricostruire un wallet) invece che a path nuovi"
+
+msgid "--path needs --seed-file"
+msgstr "--path richiede --seed-file"
+
+msgid "--vanity cannot be used with a seed: the derivation path fixes the key"
+msgstr "--vanity non si può usare con un seed: la chiave è fissata dal path di derivazione"
+
+msgid "first create a new random seed with paperseed.py (NAME-seed.pdf and .md, no passphrase), then derive the keys from it"
+msgstr "crea prima un nuovo seed casuale con paperseed.py (NOME-seed.pdf e .md, senza passphrase), poi ne deriva le chiavi"
+
+msgid "with --random-seed: number of words of the new seed (default 24)"
+msgstr "con --random-seed: numero di parole del nuovo seed (default 24)"
+
+msgid "--words needs --random-seed"
+msgstr "--words richiede --random-seed"
+
+msgid "new seed:"
+msgstr "nuovo seed:"
+
+msgid "--wallets and the number of --path entries differ"
+msgstr "--wallets e il numero di path in --path non coincidono"
+
+msgid "--network {network} differs from the network of {path} ({file})"
+msgstr "--network {network} è diversa dalla rete di {path} ({file})"
+
+msgid "{path} is not a paperseed.py file (missing: {fields})"
+msgstr "{path} non è un file di paperseed.py (manca: {fields})"
+
+msgid "unknown network in {path}: {network}"
+msgstr "rete sconosciuta in {path}: {network}"
+
+msgid "the seed fingerprint does not match the file: wrong passphrase?"
+msgstr "il fingerprint del seed non corrisponde al file: passphrase sbagliata?"
+
+msgid "derivation path · seed {fingerprint}"
+msgstr "path di derivazione · seed {fingerprint}"
+
+msgid "path: {path}"
+msgstr "path: {path}"
+
+msgid "ORIGIN OF THIS KEY"
+msgstr "ORIGINE DI QUESTA CHIAVE"
+
+msgid "Derived from a BIP39 seed (generator key) of whoever gave"
+msgstr "Derivata dal seed BIP39 (chiave madre) di chi ti ha dato"
+
+msgid "you this card, who may not keep that seed for long."
+msgstr "questa tessera, che potrebbe non conservarlo a lungo."
+
+msgid "Any wallet restoring that seed finds it again;"
+msgstr "Ogni wallet che ripristina quel seed la ritrova;"
+
+msgid "Only the seed plus the path printed outside rebuild it;"
+msgstr "Si ricostruisce solo con il seed e il path stampato fuori;"
+
+msgid "while the seed exists, whoever holds it can spend too."
+msgstr "finché il seed esiste, anche chi lo ha può spenderla."
+
+#. paperseed.py
+msgid "Generate an offline BIP39 seed (mnemonic) as a duplex A4 PDF."
+msgstr "Genera offline un seed BIP39 (mnemonica) come PDF A4 fronte/retro."
+
+msgid "number of words (default 24)"
+msgstr "numero di parole (default 24)"
+
+msgid "ask a BIP39 passphrase (never printed or written)"
+msgstr "chiede una passphrase BIP39 (mai stampata né scritta)"
+
+msgid "account derivation path (default m/84'/0'/0', m/84'/1'/0' on test networks)"
+msgstr "path di derivazione dell'account (default m/84'/0'/0', m/84'/1'/0' sulle reti di prova)"
+
+msgid "BIP39 passphrase: "
+msgstr "Passphrase BIP39: "
+
+msgid "Bitcoin seed (BIP39)"
+msgstr "Seed Bitcoin (BIP39)"
+
+msgid "ACCOUNT XPUB  ·  WATCH-ONLY"
+msgstr "XPUB DELL'ACCOUNT  ·  SOLA LETTURA"
+
+msgid "PUBLIC"
+msgstr "PUBBLICO"
+
+msgid "SEED  PHRASE"
+msgstr "FRASE  SEED"
+
+msgid "BIP39 · {words} words · {prefix}"
+msgstr "BIP39 · {words} parole · {prefix}"
+
+msgid "PASSPHRASE REQUIRED"
+msgstr "SERVE LA PASSPHRASE"
+
+msgid "NO PASSPHRASE"
+msgstr "SENZA PASSPHRASE"
+
+msgid "seed inside — keep sealed"
+msgstr "seed all'interno — non aprire"
+
+msgid "SEED PHRASE  ·  BIP39  ·  {words} WORDS"
+msgstr "FRASE SEED  ·  BIP39  ·  {words} PAROLE"
+
+msgid "SECRET"
+msgstr "SEGRETO"
+
+
+
+
+
+
+msgid "Watch-only: import the xpub outside, then receive to its addresses."
+msgstr "Sola lettura: importa l'xpub esterno, poi ricevi sui suoi indirizzi."
+
+msgid "SEED PHRASE AS TEXT  ·  words separated by spaces"
+msgstr "FRASE SEED COME TESTO  ·  parole separate da spazi"
+
+msgid "same information as the SeedQR on the other side of this panel"
+msgstr "stessa informazione del SeedQR sull'altro lato di questo pannello"
+
+msgid "HOW TO RESTORE THE WALLET"
+msgstr "COME RIPRISTINARE IL WALLET"
+
+msgid "Sparrow: File › New Wallet › Mnemonic Words (BIP39),"
+msgstr "Sparrow: File › New Wallet › Mnemonic Words (BIP39),"
+
+msgid "Native SegWit, derivation {path}."
+msgstr "Native SegWit, derivation {path}."
+
+msgid "Electrum: Standard wallet › I already have a seed ›"
+msgstr "Electrum: Standard wallet › I already have a seed ›"
+
+msgid "Options › BIP39 seed, then native segwit and {path}."
+msgstr "Options › BIP39 seed, poi native segwit e {path}."
+
+msgid "Check the fingerprint {fingerprint} and the first address:"
+msgstr "Controlla il fingerprint {fingerprint} e il primo indirizzo:"
+
+msgid "Without the passphrase the words open another, empty wallet."
+msgstr "Senza la passphrase le parole aprono un altro wallet, vuoto."
+
+msgid "• Keep the BIP39 passphrase elsewhere, never with the card."
+msgstr "• Conserva la passphrase BIP39 altrove, mai insieme alla tessera."
+
+msgid "Words"
+msgstr "Parole"
+
+msgid "word"
+msgstr "parola"
+
+msgid "Paper wallets from this seed"
+msgstr "Paper wallet da questo seed"
+
+msgid "paperwallet.py --seed-file FILE derives paper wallets from this seed at the receive addresses of its account, {path}/0/0, {path}/0/1 and so on, which any wallet restoring the seed finds. With --gift they are at random paths m/184'/a'/b'/c'/d' instead, which only this seed plus the path printed on the card rebuild (--path)."
+msgstr "paperwallet.py --seed-file FILE deriva i paper wallet da questo seed agli indirizzi di ricezione del suo account, {path}/0/0, {path}/0/1 e così via, che ogni wallet che ripristina il seed ritrova. Con --gift sono invece a path casuali m/184'/a'/b'/c'/d', che solo questo seed più il path stampato sulla tessera ricostruiscono (--path)."
+
+msgid "fingerprint: {fingerprint}"
+msgstr "fingerprint: {fingerprint}"
+
+msgid "account: {path} {xpub}"
+msgstr "account: {path} {xpub}"
+
+msgid "first address: {address}"
+msgstr "primo indirizzo: {address}"
+
+msgid "strips: {copies} · A4 sheets: {sheets}"
+msgstr "strisce: {copies} · fogli A4: {sheets}"
+
+#. btccore.py (BIP32/BIP39)
+msgid "a derivation path starts with m/"
+msgstr "un path di derivazione inizia con m/"
+
+msgid "invalid derivation path"
+msgstr "path di derivazione non valido"
+
+msgid "invalid BIP39 mnemonic (unknown word, wrong length or checksum)"
+msgstr "mnemonica BIP39 non valida (parola sconosciuta, lunghezza o checksum sbagliati)"
+
+msgid "internal self-check failed (BIP32 derivation)"
+msgstr "autoverifica interna fallita (derivazione BIP32)"
+
+msgid "internal self-check failed (BIP39 round-trip)"
+msgstr "autoverifica interna fallita (andata e ritorno BIP39)"
+
+#. --from-md / --no-pdf
+
+msgid "only rebuild the PDF from a Markdown file written earlier by this tool (its data are checked first)"
+msgstr "rigenera solo il PDF da un file Markdown scritto prima da questo programma (i dati vengono ricontrollati)"
+
+msgid "write only the Markdown file, no PDF"
+msgstr "scrive solo il file Markdown, nessun PDF"
+
+msgid "--from-md writes only the PDF: it cannot be used with --no-pdf"
+msgstr "--from-md scrive solo il PDF: non si può usare con --no-pdf"
+
+msgid "--from-md takes the wallets from the file: it cannot be used with {option}"
+msgstr "--from-md prende i wallet dal file: non si può usare con {option}"
+
+msgid "{path} was not written by {tool}"
+msgstr "{path} non è stato scritto da {tool}"
+
+msgid "{path} lists no wallet"
+msgstr "{path} non contiene nessun wallet"
+
+msgid "wallet {n} of {path}: the key does not match the address"
+msgstr "wallet {n} di {path}: la chiave non corrisponde all'indirizzo"
+
+msgid "{path} does not match its own seed (fingerprint, xpub or first address): wrong passphrase, or an edited file?"
+msgstr "{path} non corrisponde al proprio seed (fingerprint, xpub o primo indirizzo): passphrase sbagliata, o file modificato?"
+
+msgid "with a seed: derive at random paths m/184'/a'/b'/c'/d' instead of at the receive addresses of the seed's account, a tree no wallet scans and the account keys cannot reach"
+msgstr "con un seed: deriva a path casuali m/184'/a'/b'/c'/d' invece che agli indirizzi di ricezione dell'account del seed, un albero che nessun wallet esplora e che le chiavi dell'account non raggiungono"
+
+msgid "--gift needs --seed-file or --random-seed"
+msgstr "--gift richiede --seed-file o --random-seed"
+
+msgid "--gift makes new paths: it cannot be used with --path"
+msgstr "--gift crea path nuovi: non si può usare con --path"
+
+msgid "with a seed: first receive address of the account to use (default 0); the wallets take N, N+1, ..."
+msgstr "con un seed: primo indirizzo di ricezione dell'account da usare (default 0); i wallet prendono N, N+1, ..."
+
+msgid "--index needs --seed-file or --random-seed"
+msgstr "--index richiede --seed-file o --random-seed"
+
+msgid "--index cannot be used with --gift or --path"
+msgstr "--index non si può usare con --gift o --path"
+
+msgid "--index must be between 0 and 2147483643"
+msgstr "--index deve essere tra 0 e 2147483643"
+
+msgid "next time use --index {index} for new wallets from this seed"
+msgstr "la prossima volta usa --index {index} per nuovi wallet da questo seed"
+
+msgid "libsecp256k1 not found"
+msgstr "libsecp256k1 non trovata"
+
+msgid "libsecp256k1 initialisation failed"
+msgstr "inizializzazione di libsecp256k1 fallita"
+
+msgid "invalid public key"
+msgstr "chiave pubblica non valida"
+
+msgid "invalid base58 character"
+msgstr "carattere base58 non valido"
+
+msgid "invalid base58 checksum"
+msgstr "checksum base58 sbagliato"
+
+msgid "not a WIF private key of this network"
+msgstr "non è una chiave privata WIF di questa rete"
+
+msgid "invalid BIP32 key (probability 2^-127: use another index)"
+msgstr "chiave BIP32 non valida (probabilità 2^-127: usa un altro indice)"

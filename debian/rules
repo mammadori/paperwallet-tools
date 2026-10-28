@@ -1,0 +1,30 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+PKGDIR = /usr/share/paperwallet-tools
+
+%:
+	dh $@
+
+# The manual pages are the programs' --help, in English. help2man runs them
+# through symlinks so that they call themselves paperwallet and paperseed, as
+# in /usr/bin.
+override_dh_auto_build:
+	mkdir -p debian/man/bin
+	ln -sf ../../../paperwallet.py debian/man/bin/paperwallet
+	ln -sf ../../../paperseed.py debian/man/bin/paperseed
+	LC_ALL=C.UTF-8 LANGUAGE= help2man --no-info --version-string=$(DEB_VERSION_UPSTREAM) \
+		--name="offline Bitcoin paper wallet generator" \
+		--output=debian/man/paperwallet.1 debian/man/bin/paperwallet
+	LC_ALL=C.UTF-8 LANGUAGE= help2man --no-info --version-string=$(DEB_VERSION_UPSTREAM) \
+		--name="offline BIP39 seed card generator" \
+		--output=debian/man/paperseed.1 debian/man/bin/paperseed
+
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	python3 -m pytest -q -p no:cacheprovider
+endif
+
+override_dh_python3:
+	dh_python3 $(PKGDIR)

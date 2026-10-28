@@ -1,0 +1,6 @@
+btccore.py usr/share/paperwallet-tools
+paperlib.py usr/share/paperwallet-tools
+paperseed.py usr/share/paperwallet-tools
+paperwallet.py usr/share/paperwallet-tools
+assets/solarpunk-vault.jpg usr/share/paperwallet-tools/assets
+locale usr/share/paperwallet-tools

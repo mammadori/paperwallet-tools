@@ -1,0 +1,11 @@
+paperwallet-tools for Debian
+----------------------------
+
+The programs are installed as /usr/bin/paperwallet and /usr/bin/paperseed:
+where README.md says ./paperwallet.py or ./paperseed.py, use those commands.
+The code lives in /usr/share/paperwallet-tools.
+
+Generate wallets on a machine disconnected from the network, and keep the
+PDF and .md files they write private: they contain the secrets.
+
+ -- Marco Amadori <marco.amadori@gmail.com>  Wed, 28 Oct 2026 20:02:39 +0000

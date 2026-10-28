@@ -1,0 +1,14 @@
+#!/bin/sh
+# Generate a seed and wallets on signet with the installed programs, and
+# rebuild the PDF from the Markdown file.
+set -eu
+cd "$AUTOPKGTEST_TMP"
+export LANGUAGE=en
+paperseed --network signet --copies 1 -o seed
+test -s seed.pdf && test -s seed.md
+paperwallet --network signet --seed-file seed.md -w 2 --copies 1 -o gifts
+test -s gifts.pdf && test -s gifts.md
+paperwallet --network signet --vanity qq --copies 1 -o vanity
+paperwallet --from-md vanity.md -o rebuilt
+test -s rebuilt.pdf
+echo "smoke: OK"

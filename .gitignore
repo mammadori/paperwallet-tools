@@ -1,0 +1,13 @@
+# Virtual environment and caches
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Generated wallets contain private keys: never commit them
+*.pdf
+
+# Compiled gettext catalogs are build artefacts
+*.mo
+# Outputs of the tools: they contain secrets
+/paperwallet*.md
+/paperseed*.md

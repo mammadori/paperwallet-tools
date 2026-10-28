@@ -1,0 +1,47 @@
+Source: paperwallet-tools
+Section: utils
+Maintainer: Marco Amadori <marco.amadori@gmail.com>
+Build-Depends:
+ debhelper-compat (= 14),
+ dh-sequence-python3,
+ fonts-open-sans <!nocheck>,
+ gettext <!nocheck>,
+ help2man,
+ libsecp256k1-6,
+ python3:any,
+ python3-mnemonic,
+ python3-pycryptodome,
+ python3-pypdf <!nocheck>,
+ python3-pytest <!nocheck>,
+ python3-qrcode,
+ python3-reportlab,
+Standards-Version: 4.7.4
+
+Package: paperwallet-tools
+Architecture: all
+Depends:
+ libsecp256k1-6,
+ python3-mnemonic,
+ python3-pycryptodome,
+ python3-qrcode,
+ python3-reportlab,
+ ${misc:Depends},
+ ${python3:Depends},
+Recommends:
+ fonts-open-sans,
+Description: offline generator of Bitcoin paper wallets and BIP39 seed cards
+ Two command line programs that generate Bitcoin keys and BIP39 seeds on a
+ computer disconnected from the network and lay them out in a duplex A4 PDF,
+ to be printed, cut and folded into a card the size of a credit card.
+ .
+  * paperwallet creates P2WPKH (bc1q...) addresses with their private keys,
+    in clear or BIP38-encrypted, from system randomness, from user entropy
+    such as dice rolls, or derived from a BIP39 seed, at the standard
+    receive addresses of its account or at random paths outside it; it can
+    also search for vanity address prefixes.
+  * paperseed creates a BIP39 seed card with the numbered words, a SeedQR
+    and the account xpub.
+ .
+ The private key is folded inside the card, under a random pattern that
+ hides it when held against the light; outside there is only the address.
+ The programs disable networking at startup and print only public data.
