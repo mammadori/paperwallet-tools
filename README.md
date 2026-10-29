@@ -32,7 +32,7 @@ network, or on a live system such as [Tails].
 
 | library | what it is for | Debian package | pip |
 |---|---|---|---|
-| [libsecp256k1] | the elliptic curve maths of Bitcoin (the Bitcoin Core library) | `libsecp256k1-6` | — (system library) |
+| [libsecp256k1] | the elliptic curve maths of Bitcoin (the Bitcoin Core library) | `libsecp256k1-6` (sid), `libsecp256k1-2` (trixie) | — (system library) |
 | [python-mnemonic] | the BIP39 words (the reference implementation) | `python3-mnemonic` | `mnemonic` |
 | pycryptodome | the AES encryption of BIP38 | `python3-pycryptodome` | `pycryptodome` |
 | reportlab, qrcode | the PDF and the QR codes | `python3-reportlab`, `python3-qrcode` | `reportlab`, `qrcode` |
@@ -44,9 +44,12 @@ network, or on a live system such as [Tails].
 sudo apt install libsecp256k1-6 python3-mnemonic python3-pycryptodome python3-reportlab python3-qrcode fonts-open-sans
 ```
 
+On Debian 13 trixie the library is packaged as `libsecp256k1-2` (version 0.5): install that
+instead of `libsecp256k1-6`.
+
 **With pip**, in a virtual environment. libsecp256k1 and Open Sans are not Python packages:
-install them with the system's package manager (on Debian, `libsecp256k1-6` and
-`fonts-open-sans`).
+install them with the system's package manager (on Debian, `libsecp256k1-6`, or
+`libsecp256k1-2` on trixie, and `fonts-open-sans`).
 
 ```bash
 python3 -m venv .venv

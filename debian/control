@@ -8,7 +8,7 @@ Build-Depends:
  fonts-open-sans <!nocheck>,
  gettext <!nocheck>,
  help2man,
- libsecp256k1-6,
+ libsecp256k1-6 | libsecp256k1-2,
  python3:any,
  python3-mnemonic,
  python3-pycryptodome,
@@ -21,7 +21,7 @@ Standards-Version: 4.7.4
 Package: paperwallet-tools
 Architecture: all
 Depends:
- libsecp256k1-6,
+ libsecp256k1-6 | libsecp256k1-2,
  python3-mnemonic,
  python3-pycryptodome,
  python3-qrcode,
