@@ -3,6 +3,7 @@ Section: utils
 Maintainer: Marco Amadori <marco.amadori@gmail.com>
 Build-Depends:
  debhelper-compat (= 14),
+ dh-sequence-single-binary,
  dh-sequence-python3,
  fonts-open-sans <!nocheck>,
  gettext <!nocheck>,
@@ -25,8 +26,6 @@ Depends:
  python3-pycryptodome,
  python3-qrcode,
  python3-reportlab,
- ${misc:Depends},
- ${python3:Depends},
 Recommends:
  fonts-open-sans,
 Description: offline generator of Bitcoin paper wallets and BIP39 seed cards
