@@ -5,7 +5,7 @@
 # runtime, no compiled .mo is needed.
 msgid ""
 msgstr ""
-"Project-Id-Version: paperwallet-tools 0.1.0\n"
+"Project-Id-Version: paperwallet-tools 0.1.1\n"
 "PO-Revision-Date: 2026-10-28 20:00+0000\n"
 "Last-Translator: Marco Amadori <marco.amadori@gmail.com>\n"
 "Language-Team: Italian\n"

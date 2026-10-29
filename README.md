@@ -79,7 +79,7 @@ The `debian/` folder builds the `paperwallet-tools` package. From the project fo
 sudo apt install build-essential
 sudo apt build-dep ./
 dpkg-buildpackage -us -uc -b
-sudo apt install ../paperwallet-tools_0.1.0_all.deb
+sudo apt install ../paperwallet-tools_0.1.1_all.deb
 ```
 
 The build also runs the tests. The package installs the commands `paperwallet` and `paperseed`
